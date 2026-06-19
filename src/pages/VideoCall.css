@@ -1,0 +1,159 @@
+.video-call-page {
+  padding: 30px 0;
+  background: #f8f9fa;
+  min-height: calc(100vh - 160px);
+}
+
+.video-interface {
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+}
+
+.main-video-container {
+  position: relative;
+  flex: 1;
+  background: #222;
+  overflow: hidden;
+}
+
+.video-feed {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.self-feed {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 240px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  background: #333;
+}
+
+.video-off-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+}
+
+.participant-info {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.participant-info .badge {
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.video-controls {
+  height: 80px;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.control-group {
+  display: flex;
+  gap: 15px;
+  flex: 1;
+}
+
+.control-group.center-controls {
+  justify-content: center;
+  flex: 2;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.control-btn.danger {
+  background: #ea4335;
+}
+
+.control-btn.danger:hover {
+  background: #d33426;
+}
+
+.control-btn.active {
+  background: #0d6efd;
+}
+
+.control-btn.end-call {
+  background: #ea4335;
+  width: 60px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.control-btn.end-call:hover {
+  background: #d33426;
+}
+
+.call-ended-state {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 50px 30px;
+}
+
+.text-center { text-align: center; }
+
+@media (max-width: 768px) {
+  .self-feed {
+    width: 120px;
+    height: 160px;
+    bottom: 10px;
+    right: 10px;
+  }
+  .control-group:first-child, .control-group:last-child {
+    display: none;
+  }
+  .video-controls {
+    justify-content: center;
+  }
+}

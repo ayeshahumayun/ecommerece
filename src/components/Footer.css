@@ -1,0 +1,150 @@
+.footer {
+  background-color: var(--bg-white);
+  margin-top: 40px;
+}
+
+.newsletter-section {
+  background: linear-gradient(135deg, var(--text-dark), #1e293b);
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.newsletter-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.newsletter-section p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.subscribe-form {
+  gap: 10px;
+}
+
+.subscribe-form input {
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: var(--border-radius-sm);
+  outline: none;
+  width: 320px;
+  transition: var(--transition);
+}
+
+.subscribe-form input:focus {
+  background: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.subscribe-form input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.footer-links-section {
+  padding: 40px 15px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.brand-info {
+  max-width: 250px;
+}
+
+.brand-info p {
+  color: var(--text-light);
+  margin: 15px 0;
+}
+
+.social-icons {
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  background: var(--text-gray);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.footer-links h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: var(--text-gray);
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--primary-color);
+  padding-left: 4px;
+}
+
+.get-app {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.get-app h4 {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.app-btn {
+  background-color: var(--text-dark);
+  color: white;
+  border-radius: var(--border-radius-sm);
+  padding: 10px 16px;
+  font-size: 14px;
+  gap: 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.app-btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.app-icon {
+  font-size: 20px;
+}
+
+.border-top {
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom {
+  padding: 20px 15px;
+  color: var(--text-gray);
+}
+
+@media (max-width: 768px) {
+  .footer-links-section {
+    flex-direction: column;
+  }
+}

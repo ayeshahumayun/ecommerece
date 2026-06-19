@@ -1,0 +1,131 @@
+.login-page {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #f0f4f8;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle.bg-primary-light {
+  background: rgba(13, 110, 253, 0.1);
+}
+
+.text-primary { color: #0d6efd; }
+.text-success { color: #198754; }
+
+.mx-auto { margin-left: auto; margin-right: auto; }
+.py-4 { padding-top: 2rem; padding-bottom: 2rem; }
+.pl-4 { padding-left: 2.5rem; }
+.p-0 { padding: 0; }
+
+.role-selector {
+  display: flex;
+  background: #f0f2f5;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.role-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.role-btn.active {
+  background: white;
+  color: #0d6efd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  color: #aaa;
+}
+
+.link-primary {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.link-primary:hover {
+  text-decoration: underline;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.strength-bar-container {
+  height: 6px;
+  background: #e9ecef;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.bg-danger { background-color: #dc3545; }
+.bg-warning { background-color: #ffc107; }
+.bg-info { background-color: #0dcaf0; }
+.bg-success { background-color: #198754; }
+
+.otp-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-input {
+  width: 50px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.otp-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+  outline: none;
+}
+
+.animation-fade {
+  animation: fadeIn 0.4s ease;
+}

@@ -1,0 +1,258 @@
+.product-page {
+  padding: 20px 15px;
+}
+
+.breadcrumb {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+.page-layout {
+  gap: 20px;
+}
+
+/* Sidebar Filter */
+.sidebar-filter {
+  width: 250px;
+}
+
+.filter-group {
+  padding: 15px 0;
+}
+
+.filter-group h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter-group ul li {
+  color: var(--text-gray);
+  padding: 6px 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.filter-group ul li:hover {
+  color: var(--primary-color);
+  transform: translateX(4px);
+}
+
+.checkbox-item, .radio-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.see-all {
+  color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.price-inputs label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Product Content */
+.product-content {
+  flex: 1;
+}
+
+.product-header {
+  padding: 10px 20px;
+}
+
+.view-toggles {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.btn-toggle {
+  padding: 10px 14px;
+  background: white;
+  border: none;
+  border-right: 1px solid var(--border-color);
+  color: var(--text-gray);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-toggle:last-child {
+  border-right: none;
+}
+
+.btn-toggle:hover {
+  background: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.btn-toggle.active {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* List View */
+.list-item {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.list-item .img-wrapper {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.list-item-details {
+  flex: 1;
+}
+
+.list-item-details h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.current-price {
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.old-price {
+  color: var(--text-gray);
+  text-decoration: line-through;
+}
+
+.rating-info {
+  font-size: 14px;
+}
+
+.stars {
+  letter-spacing: -2px;
+}
+
+.rating-num {
+  color: #FF9017;
+  font-weight: bold;
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+.desc {
+  color: var(--text-gray);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.view-details {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Grid View */
+.applied-filters {
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  background: white;
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.filter-tag:hover {
+  background: #fee2e2;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.clear-all {
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
+.grid-item .img-wrapper {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.mb-5 { margin-bottom: 5px; }
+
+/* Pagination */
+.page-btn {
+  border: 1px solid var(--border-color);
+  background: white;
+  padding: 10px 16px;
+  color: var(--text-gray);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.page-btn:hover {
+  background: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.page-btn.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  font-weight: bold;
+}
+
+.page-btn:first-child {
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+}
+
+.page-btn:last-child {
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
+  .sidebar-filter {
+    width: 100%;
+  }
+  .list-item {
+    flex-direction: column;
+  }
+  .list-item .img-wrapper {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
